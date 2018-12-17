@@ -221,7 +221,7 @@ class views_slideshow_plugin_style_slideshow extends views_plugin_style {
   }
 
   // Run any validation on the form settings.
-  function options_validate(&$form, &$form_state) {
+  function options_validate($form, &$form_state) {
     module_load_all_includes('views_slideshow.inc');
 
     $arguments = array(
