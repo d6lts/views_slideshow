@@ -89,7 +89,7 @@ class views_slideshow_plugin_style_slideshow extends views_plugin_style_list {
     }
   }
 
-  function options_validate($form, &$form_state) {
+  function options_validate(&$form, &$form_state) {
     module_load_all_includes('views_slideshow.inc');
     foreach (module_implements('views_slideshow_options_form_validate') as $module) {
       $function = $module . '_views_slideshow_options_form_validate';
