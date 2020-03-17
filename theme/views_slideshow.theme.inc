@@ -206,7 +206,7 @@ function theme_views_slideshow_pager_widget_render($vss_id, $view, $settings, $l
             function ($m) {
               return strtoupper($m[1]);
             },
-            $vars['settings']['type']),
+            $settings['type']),
           ),
         ),
       ),
@@ -307,7 +307,7 @@ function theme_views_slideshow_controls_widget_render($vss_id, $view, $settings,
             function ($m) {
               return strtoupper($m[1]);
             },
-            $vars['settings']['type']),
+            $settings['type']),
          ),
         ),
       ),
